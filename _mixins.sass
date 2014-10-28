@@ -32,16 +32,20 @@
 
 /* Easely center an element */
 @mixin center-box($width: 80%, $margin-up-down: 0){
+
   float: none;
   width: $width;
   margin: $margin-up-down auto;
+
 }
 
 /* Cross browser scale */
 @mixin scale-element($valueX: 1.2, $valueY: 1.2){
+
   -webkit-transform: scale($valueX, $valueY);
   -moz-transform: scale($valueX, $valueY);
   -ms-transform: scale($valueX, $valueY);
   -o-transform: scale($valueX, $valueY);
   transform: scale($valueX, $valueY);
+  
 }
