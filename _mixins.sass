@@ -49,3 +49,23 @@
   transform: scale($valueX, $valueY);
   
 }
+
+/*Apply filter to an element. Filters are one of the following:*/
+// Greyscale
+// Blur
+// Saturate
+// Sepia
+// Hue Rotate
+// Invert
+// Brightness
+// Contrast
+// Opacity
+//
+// call like this: .class{ @include apply-filter(blur, 10%); }
+@mixin apply-filter($filter, $amount){
+  -webkit-filter: #{$filter}(#{$amount});
+  -moz-filter: #{$filter}(#{$amount});
+  -o-filter: #{$filter}(#{$amount});
+  -ms-filter: #{$filter}(#{$amount});
+  filter: #{$filter}(#{$amount});
+}
