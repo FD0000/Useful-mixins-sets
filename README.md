@@ -1,4 +1,5 @@
 Useful-mixins-sets
 ==================
 
-Useful sets of mixins which everyone should include in their sass project
+Useful sets of mixins simplifiyng your sass workflow with transition and animations.
+To be continued.
